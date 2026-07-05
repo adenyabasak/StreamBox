@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - StreamBox Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/streambox.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <div class="admin-wrapper">
+
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo">
+                STREAMBOX
+                <span>ADMIN PANEL</span>
+            </div>
+
+            <nav class="admin-menu">
+
+                <a href="/Admin/Index">
+                    🏠 Dashboard
+                </a>
+
+                <a href="/AdminMovie/Index">
+                    🎬 Film Yönetimi
+                </a>
+
+                <a href="/AdminCategory/Index">
+                    📂 Kategori Yönetimi
+                </a>
+
+                <a href="/AdminActor/Index">
+                    🎭 Oyuncu Yönetimi
+                </a>
+
+                <a href="/AdminMovieActor/Index">
+                    🎥 Film Oyuncuları
+                </a>
+
+                <a href="/AdminReport/Index">
+                    📊 Raporlar
+                </a>
+
+                <hr class="text-secondary" />
+
+                <a href="/Movie/Index">
+                    🌐 Siteye Dön
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="admin-content">
+
+            <div class="admin-topbar">
+
+                <h5>🎬 StreamBox Yönetim Paneli</h5>
+
+                <span>Hoş Geldiniz, Admin</span>
+
+            </div>
+
+            @RenderBody()
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

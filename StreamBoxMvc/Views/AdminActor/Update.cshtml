@@ -1,0 +1,54 @@
+﻿@model StreamBoxMvc.Models.Actor
+
+@{
+    ViewData["Title"] = "Oyuncu Güncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card bg-dark shadow-lg border-0">
+
+    <div class="card-body">
+
+        <h3 class="text-white mb-4">
+            Oyuncu Güncelle
+        </h3>
+
+        <form method="post">
+
+            <input asp-for="ActorId" type="hidden" />
+
+            <label class="text-white">Oyuncu Adı</label>
+
+            <input asp-for="ActorName"
+                   class="form-control mb-3" />
+
+            <label class="text-white">Yaş</label>
+
+            <input asp-for="Age"
+                   class="form-control mb-3" />
+
+            <label class="text-white">Ülke</label>
+
+            <input asp-for="Country"
+                   class="form-control mb-3" />
+
+            <label class="text-white">Resim URL</label>
+
+            <input asp-for="ImageUrl"
+                   class="form-control mb-4"
+                   placeholder="https://..." />
+
+            <button class="btn btn-warning">
+                Güncelle
+            </button>
+
+            <a href="/AdminActor"
+               class="btn btn-secondary">
+                Vazgeç
+            </a>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,48 @@
+﻿@model List<StreamBoxMvc.Models.Category>
+
+@{
+    ViewData["Title"] = "Kategori Yönetimi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section-head">
+    <div class="section-title">Kategori Yönetimi</div>
+    <div class="section-line"></div>
+</div>
+
+<a href="/AdminCategory/Create" class="play-btn mb-4 d-inline-block">
+    + Yeni Kategori Ekle
+</a>
+
+<table class="table table-dark table-hover align-middle text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Kategori Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+
+                <td>
+                    <a href="/AdminCategory/Delete/@item.CategoryId" class="btn btn-danger">
+                        Sil
+                    </a>
+                </td>
+
+                <td>
+                    <a href="/AdminCategory/Update/@item.CategoryId" class="btn btn-warning">
+                        Güncelle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

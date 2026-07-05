@@ -1,0 +1,160 @@
+﻿@{
+    ViewData["Title"] = "Raporlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    var oldestMovie = ViewBag.OldestMovie as StreamBoxMvc.Models.ReportMovieDto;
+    var newestMovie = ViewBag.NewestMovie as StreamBoxMvc.Models.ReportMovieDto;
+}
+
+<div class="container-fluid">
+
+    <h2 class="text-white mb-4 fw-bold">📊 StreamBox Raporları</h2>
+
+
+    <div class="mb-4">
+
+        <a href="/AdminReport/ExportExcel"
+           class="btn btn-success me-2">
+            📗 Excel İndir
+        </a>
+
+        <a href="/AdminReport/ExportPdf"
+           class="btn btn-danger">
+            📕 PDF İndir
+        </a>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 mb-4">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body">
+                    <h6>Toplam Film</h6>
+                    <h2>@ViewBag.MovieCount</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+            <div class="card bg-success text-white shadow">
+                <div class="card-body">
+                    <h6>Toplam Kategori</h6>
+                    <h2>@ViewBag.CategoryCount</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+            <div class="card bg-warning text-dark shadow">
+                <div class="card-body">
+                    <h6>Toplam Oyuncu</h6>
+                    <h2>@ViewBag.ActorCount</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+            <div class="card bg-danger text-white shadow">
+                <div class="card-body">
+                    <h6>Film-Oyuncu Eşleşmesi</h6>
+                    <h2>@ViewBag.MovieActorCount</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-dark text-white shadow mb-4">
+                <div class="card-header">🎬 En Eski Film</div>
+
+                <div class="card-body">
+                    @if (oldestMovie != null)
+                    {
+                        <h4 class="fw-bold">@oldestMovie.Title</h4>
+                        <p class="mb-2">📅 Çıkış Yılı: @oldestMovie.ReleaseYear</p>
+                        <p class="mb-0">🎬 Kategori: @oldestMovie.CategoryName</p>
+                    }
+                    else
+                    {
+                        <h5>Veri bulunamadı.</h5>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-dark text-white shadow mb-4">
+                <div class="card-header">⭐ En Yeni Film</div>
+
+                <div class="card-body">
+                    @if (newestMovie != null)
+                    {
+                        <h4 class="fw-bold">@newestMovie.Title</h4>
+                        <p class="mb-2">📅 Çıkış Yılı: @newestMovie.ReleaseYear</p>
+                        <p class="mb-0">🎬 Kategori: @newestMovie.CategoryName</p>
+                    }
+                    else
+                    {
+                        <h5>Veri bulunamadı.</h5>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-white shadow">
+                <div class="card-header">🎞️ Kategoriye Göre Film Sayıları</div>
+
+                <div class="card-body">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Kategori</th>
+                                <th>Film Sayısı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.MovieCountByCategory)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Count</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-white shadow">
+                <div class="card-header">🌍 Ülkelere Göre Oyuncu Sayıları</div>
+
+                <div class="card-body">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Ülke</th>
+                                <th>Oyuncu Sayısı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.ActorCountByCountry)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Count</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,78 @@
+﻿@model StreamBoxMvc.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width:500px;">
+
+    <div class="card bg-dark text-white shadow-lg border-0">
+
+        <div class="card-body p-4">
+
+            <h2 class="text-center mb-4">
+                🎬 StreamBox Giriş
+            </h2>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.Error
+                </div>
+            }
+
+            <form method="post">
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Kullanıcı Adı
+                    </label>
+
+                    <input asp-for="Username"
+                           class="form-control" />
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">
+                        Şifre
+                    </label>
+
+                    <input asp-for="Password"
+                           type="password"
+                           class="form-control" />
+
+                </div>
+
+                <button type="submit"
+                        class="btn btn-danger w-100">
+                    Giriş Yap
+                </button>
+
+            </form>
+
+            <hr />
+
+            <div class="text-center">
+
+                <span class="text-secondary">
+                    Hesabınız yok mu?
+                </span>
+
+                <br />
+
+                <a href="/Account/Register"
+                   class="btn btn-outline-light mt-3">
+                    Kayıt Ol
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

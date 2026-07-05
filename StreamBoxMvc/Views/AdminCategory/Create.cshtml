@@ -1,0 +1,30 @@
+﻿@model StreamBoxMvc.Models.Category
+
+@{
+    ViewData["Title"] = "Yeni Kategori";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section-head">
+    <div class="section-title">Yeni Kategori Ekle</div>
+    <div class="section-line"></div>
+</div>
+
+<form method="post" class="admin-form">
+
+    <label>Kategori Adı</label>
+
+    <input type="text"
+           asp-for="CategoryName"
+           class="form-control mb-4" />
+
+    <button type="submit" class="btn btn-danger">
+        Kaydet
+    </button>
+
+    <a href="/AdminCategory/Index"
+       class="btn btn-secondary">
+        Vazgeç
+    </a>
+
+</form>

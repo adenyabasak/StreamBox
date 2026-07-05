@@ -1,0 +1,42 @@
+﻿@model StreamBoxMvc.Models.Movie
+
+@{
+    ViewData["Title"] = "Yeni Film Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="stream-page">
+
+    <div class="section-head">
+        <div class="section-title">Yeni Film Ekle</div>
+        <div class="section-line"></div>
+    </div>
+
+    <form method="post" class="admin-form">
+
+        <label>Film Adı</label>
+        <input type="text" name="Title" class="form-control mb-3" />
+
+        <label>Açıklama</label>
+        <textarea name="Description" class="form-control mb-3"></textarea>
+
+        <label>Görsel URL</label>
+        <input type="text" name="ImageUrl" class="form-control mb-3" />
+
+        <label>Yayın Yılı</label>
+        <input type="number" name="ReleaseYear" class="form-control mb-3" />
+
+        <label>Kategori Id</label>
+        <input type="number" name="CategoryId" class="form-control mb-4" />
+
+        <button class="btn btn-danger">
+            Kaydet
+        </button>
+
+        <a href="/AdminMovie/Index" class="btn btn-secondary">
+            Geri Dön
+        </a>
+
+    </form>
+
+</div>

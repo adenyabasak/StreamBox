@@ -1,0 +1,103 @@
+﻿@model List<StreamBoxMvc.Dtos.MovieListDto>
+
+@{
+    ViewData["Title"] = "Ana Sayfa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="stream-page">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                STREAMBOX ORIGINAL
+            </div>
+
+            <h1>DUNE PART II</h1>
+
+            <p>
+                Güç, ihanet ve kaderin iç içe geçtiği destansı bilim kurgu deneyimi.
+                Binlerce film arasından en kaliteli içerikleri keşfet.
+            </p>
+
+            <div class="hero-meta">
+                <span>⭐ IMDb 8.8</span>
+                <span>🎬 Bilim Kurgu</span>
+                <span>⏱ 2 Saat 46 Dakika</span>
+                <span>4K Ultra HD</span>
+            </div>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="play-btn">
+                    ▶ Hemen İzle
+                </a>
+
+                <a href="#" class="detail-btn">
+                    Fragman
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-head">
+
+        <div class="section-title">
+            Popüler Filmler
+        </div>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+
+                <a href="/Movie/Detail/@item.MovieId" class="movie-link">
+
+    <div class="movie-card">
+
+        <img src="@item.ImageUrl" alt="@item.Title" />
+
+        <div class="movie-info">
+
+            <div class="movie-title">
+                @item.Title
+            </div>
+
+            <div class="movie-desc">
+                @item.Description
+            </div>
+
+            <div class="movie-footer">
+
+                <span class="year">
+                    @item.ReleaseYear
+                </span>
+
+                <span class="watch">
+                    ▶ DETAY
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</a>
+
+            </div>
+        }
+
+    </div>
+
+</div>

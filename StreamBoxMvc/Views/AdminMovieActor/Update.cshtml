@@ -1,0 +1,47 @@
+﻿@model StreamBoxMvc.Models.MovieActor
+
+@{
+    ViewData["Title"] = "Film Oyuncu Güncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card bg-dark shadow-lg border-0">
+
+    <div class="card-body">
+
+        <h3 class="text-white mb-4">
+            Film Oyuncu Güncelle
+        </h3>
+
+        <form method="post">
+
+            <input asp-for="MovieActorId" type="hidden" />
+
+            <label class="text-white">Film</label>
+
+            <select asp-for="MovieId"
+                    asp-items="ViewBag.Movies"
+                    class="form-select mb-3">
+            </select>
+
+            <label class="text-white">Oyuncu</label>
+
+            <select asp-for="ActorId"
+                    asp-items="ViewBag.Actors"
+                    class="form-select mb-4">
+            </select>
+
+            <button class="btn btn-warning">
+                Güncelle
+            </button>
+
+            <a href="/AdminMovieActor"
+               class="btn btn-secondary">
+                Vazgeç
+            </a>
+
+        </form>
+
+    </div>
+
+</div>

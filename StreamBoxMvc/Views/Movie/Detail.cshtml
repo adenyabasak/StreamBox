@@ -1,0 +1,42 @@
+﻿@model StreamBoxMvc.Models.Movie
+
+@{
+    ViewData["Title"] = "Film Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="movie-detail-page">
+
+    <div class="detail-hero" style="background-image:
+        linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.65), rgba(0,0,0,.15)),
+        url('@Model.ImageUrl');">
+
+        <div class="detail-content">
+
+            <div class="hero-small">
+                STREAMBOX MOVIE
+            </div>
+
+            <h1>@Model.Title</h1>
+
+            <p>
+                @Model.Description
+            </p>
+
+            <div class="hero-meta">
+                <span>⭐ IMDb 8.7</span>
+                <span>🎬 Kategori ID: @Model.CategoryId</span>
+                <span>📅 @Model.ReleaseYear</span>
+                <span>4K Ultra HD</span>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#" class="play-btn">▶ İzle</a>
+                <a href="/Movie/Index" class="detail-btn">← Geri Dön</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section-head">
+    <div class="section-title">Admin Panel</div>
+    <div class="section-line"></div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/AdminMovie/Index" class="admin-dashboard-card">
+            <div class="icon">🎬</div>
+            <h4>Film Yönetimi</h4>
+            <p>Filmleri listele, ekle, güncelle ve sil.</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/AdminCategory/Index" class="admin-dashboard-card">
+            <div class="icon">📂</div>
+            <h4>Kategori Yönetimi</h4>
+            <p>Kategorileri listele, ekle, güncelle ve sil.</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/AdminActor/Index" class="admin-dashboard-card">
+            <div class="icon">🎭</div>
+            <h4>Oyuncu Yönetimi</h4>
+            <p>Oyuncuları listele, ekle, güncelle ve sil.</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/AdminMovieActor/Index" class="admin-dashboard-card">
+            <div class="icon">🔗</div>
+            <h4>Film Oyuncuları</h4>
+            <p>Film ve oyuncu ilişkilerini yönet.</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/AdminReport/Index" class="admin-dashboard-card">
+            <div class="icon">📊</div>
+            <h4>Raporlar</h4>
+            <p>10 raporu ve istatistikleri görüntüle.</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/Movie/Index" class="admin-dashboard-card">
+            <div class="icon">🏠</div>
+            <h4>Ana Sayfaya Dön</h4>
+            <p>Kullanıcı tarafındaki StreamBox ana sayfasına dön.</p>
+        </a>
+    </div>
+
+</div>

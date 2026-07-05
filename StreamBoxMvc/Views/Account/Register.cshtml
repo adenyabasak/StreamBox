@@ -1,0 +1,39 @@
+﻿@model StreamBoxMvc.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width:500px;">
+    <div class="card bg-dark text-white shadow-lg border-0">
+        <div class="card-body p-4">
+
+            <h2 class="text-center mb-4">🎬 StreamBox Kayıt Ol</h2>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            <form method="post">
+                <label>Kullanıcı Adı</label>
+                <input asp-for="Username" class="form-control mb-3" />
+
+                <label>Şifre</label>
+                <input asp-for="Password" type="password" class="form-control mb-4" />
+
+                <button type="submit" class="btn btn-danger w-100">
+                    Kayıt Ol
+                </button>
+            </form>
+
+            <div class="text-center mt-4">
+                <a href="/Account/Login" class="text-white">
+                    Zaten hesabın var mı? Giriş Yap
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

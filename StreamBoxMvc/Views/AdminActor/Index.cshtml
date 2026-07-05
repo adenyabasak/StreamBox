@@ -1,0 +1,79 @@
+﻿@model List<StreamBoxMvc.Models.Actor>
+
+@{
+    ViewData["Title"] = "Oyuncular";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-white fw-bold">🎭 Oyuncular</h2>
+
+    <a href="/AdminActor/Create" class="btn btn-success">
+        + Yeni Oyuncu
+    </a>
+</div>
+
+<div class="card bg-dark border-0 shadow-lg">
+
+    <div class="card-body">
+
+        <table class="table table-dark table-hover align-middle">
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+
+                    <th>Oyuncu</th>
+
+                    <th>Yaş</th>
+
+                    <th>Ülke</th>
+
+                    <th width="120">Sil</th>
+
+                    <th width="120">Güncelle</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.ActorId</td>
+
+                        <td>@item.ActorName</td>
+
+                        <td>@item.Age</td>
+
+                        <td>@item.Country</td>
+
+                        <td>
+                            <a href="/AdminActor/Delete/@item.ActorId"
+                               class="btn btn-danger btn-sm">
+                                Sil
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="/AdminActor/Update/@item.ActorId"
+                               class="btn btn-warning btn-sm">
+                                Güncelle
+                            </a>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
