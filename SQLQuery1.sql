@@ -1,0 +1,2 @@
+﻿ALTER TABLE Actors
+ADD ImageUrl NVARCHAR(MAX);

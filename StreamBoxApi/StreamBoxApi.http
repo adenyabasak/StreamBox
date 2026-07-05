@@ -1,0 +1,6 @@
+@StreamBoxApi_HostAddress = http://localhost:5120
+
+GET {{StreamBoxApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

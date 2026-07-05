@@ -1,0 +1,418 @@
+[
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ActorsController",
+    "Method": "GetAllActors",
+    "RelativePath": "api/Actors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ActorsController",
+    "Method": "CreateActor",
+    "RelativePath": "api/Actors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "actor",
+        "Type": "StreamBoxApi.Models.Actor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ActorsController",
+    "Method": "UpdateActor",
+    "RelativePath": "api/Actors",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "actor",
+        "Type": "StreamBoxApi.Models.Actor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ActorsController",
+    "Method": "GetActorById",
+    "RelativePath": "api/Actors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ActorsController",
+    "Method": "DeleteActor",
+    "RelativePath": "api/Actors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.CategoriesController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.CategoriesController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "StreamBoxApi.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.CategoriesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "StreamBoxApi.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.CategoriesController",
+    "Method": "GetCategoryById",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "GetAllMovieActors",
+    "RelativePath": "api/MovieActors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "CreateMovieActor",
+    "RelativePath": "api/MovieActors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieActor",
+        "Type": "StreamBoxApi.Models.MovieActor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "UpdateMovieActor",
+    "RelativePath": "api/MovieActors",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieActor",
+        "Type": "StreamBoxApi.Models.MovieActor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "GetMovieActorById",
+    "RelativePath": "api/MovieActors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "DeleteMovieActor",
+    "RelativePath": "api/MovieActors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MovieActorsController",
+    "Method": "GetMovieActorsWithDetails",
+    "RelativePath": "api/MovieActors/MovieActorsWithDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "GetAllMovies",
+    "RelativePath": "api/Movies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "CreateMovie",
+    "RelativePath": "api/Movies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movie",
+        "Type": "StreamBoxApi.Models.Movie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "UpdateMovie",
+    "RelativePath": "api/Movies",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movie",
+        "Type": "StreamBoxApi.Models.Movie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "GetMovieById",
+    "RelativePath": "api/Movies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "DeleteMovie",
+    "RelativePath": "api/Movies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.MoviesController",
+    "Method": "GetMoviesWithCategory",
+    "RelativePath": "api/Movies/MoviesWithCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetActorCount",
+    "RelativePath": "api/Reports/ActorCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetActorCountByCountry",
+    "RelativePath": "api/Reports/ActorCountByCountry",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetCategoryCount",
+    "RelativePath": "api/Reports/CategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetMovieActorCount",
+    "RelativePath": "api/Reports/MovieActorCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetMovieActorList",
+    "RelativePath": "api/Reports/MovieActorList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetMovieCategoryList",
+    "RelativePath": "api/Reports/MovieCategoryList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetMovieCount",
+    "RelativePath": "api/Reports/MovieCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetMovieCountByCategory",
+    "RelativePath": "api/Reports/MovieCountByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetNewestMovie",
+    "RelativePath": "api/Reports/NewestMovie",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StreamBoxApi.Controllers.ReportsController",
+    "Method": "GetOldestMovie",
+    "RelativePath": "api/Reports/OldestMovie",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
